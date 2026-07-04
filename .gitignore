@@ -1,11 +1,11 @@
 # Design system files
 .design
-colors_and_type.css
-orchestration-summary.json
-generation-tree.json
+# colors_and_type.css
+# orchestration-summary.json
+# generation-tree.json
 
 # Assets
-assets/
+# assets/
 
 # Node (if someone runs npm locally)
 node_modules/
