@@ -1,0 +1,58 @@
+{
+  "root": {
+    "nodeId": "gen-project-shell",
+    "kind": "project-shell",
+    "pageIds": ["page-home", "page-explore", "page-plan", "page-apec-guide"],
+    "output": "partials/project-shell.html",
+    "sharedRegions": ["header", "footer"],
+    "privateRegions": [],
+    "mutableSlots": ["activeNavItem", "pageTitle"],
+    "status": "planned",
+    "children": [
+      {
+        "nodeId": "gen-page-home",
+        "kind": "page-leaf",
+        "pageIds": ["page-home"],
+        "output": "pages/home.html",
+        "sharedRegions": [],
+        "privateRegions": ["page home body"],
+        "mutableSlots": ["activeNavItem"],
+        "status": "planned",
+        "children": []
+      },
+      {
+        "nodeId": "gen-page-explore",
+        "kind": "page-leaf",
+        "pageIds": ["page-explore"],
+        "output": "pages/explore.html",
+        "sharedRegions": [],
+        "privateRegions": ["page explore body"],
+        "mutableSlots": ["activeNavItem"],
+        "status": "planned",
+        "children": []
+      },
+      {
+        "nodeId": "gen-page-plan",
+        "kind": "page-leaf",
+        "pageIds": ["page-plan"],
+        "output": "pages/plan.html",
+        "sharedRegions": [],
+        "privateRegions": ["page plan body"],
+        "mutableSlots": ["activeNavItem"],
+        "status": "planned",
+        "children": []
+      },
+      {
+        "nodeId": "gen-page-apec-guide",
+        "kind": "page-leaf",
+        "pageIds": ["page-apec-guide"],
+        "output": "pages/apec-guide.html",
+        "sharedRegions": [],
+        "privateRegions": ["page apec-guide body"],
+        "mutableSlots": ["activeNavItem"],
+        "status": "planned",
+        "children": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,333 @@
+{
+  "data": [
+    {
+      "id": "page-home",
+      "title": "Home",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1751600000000,
+      "canvasData": {
+        "x": -36,
+        "y": 0,
+        "group": 0
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/home.html",
+        "interactions": [
+          {
+            "domId": "cta-explore",
+            "targetPageId": "page-explore",
+            "transitionLabel": "Explore the City"
+          },
+          {
+            "domId": "nav-explore",
+            "targetPageId": "page-explore",
+            "hideEdge": true,
+            "transitionLabel": "Navigate to Explore"
+          },
+          {
+            "domId": "nav-plan",
+            "targetPageId": "page-plan",
+            "hideEdge": true,
+            "transitionLabel": "Navigate to Plan"
+          },
+          {
+            "domId": "nav-apec",
+            "targetPageId": "page-apec-guide",
+            "hideEdge": true,
+            "transitionLabel": "Navigate to APEC Guide"
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-explore",
+      "title": "Explore Shenzhen",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1751600000000,
+      "canvasData": {
+        "x": 620,
+        "y": 0,
+        "group": 0
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/explore.html",
+        "interactions": [
+          {
+            "domId": "cta-plan",
+            "targetPageId": "page-plan",
+            "transitionLabel": "Plan Your Visit"
+          },
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-home",
+            "hideEdge": true,
+            "transitionLabel": "Navigate to Home"
+          },
+          {
+            "domId": "nav-plan",
+            "targetPageId": "page-plan",
+            "hideEdge": true,
+            "transitionLabel": "Navigate to Plan"
+          },
+          {
+            "domId": "nav-apec",
+            "targetPageId": "page-apec-guide",
+            "hideEdge": true,
+            "transitionLabel": "Navigate to APEC Guide"
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-plan",
+      "title": "Plan Your Visit",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1751600000000,
+      "canvasData": {
+        "x": 1240,
+        "y": 0,
+        "group": 0
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/plan.html",
+        "interactions": [
+          {
+            "domId": "cta-apec",
+            "targetPageId": "page-apec-guide",
+            "transitionLabel": "APEC Summit Guide"
+          },
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-home",
+            "hideEdge": true,
+            "transitionLabel": "Navigate to Home"
+          },
+          {
+            "domId": "nav-explore",
+            "targetPageId": "page-explore",
+            "hideEdge": true,
+            "transitionLabel": "Navigate to Explore"
+          },
+          {
+            "domId": "nav-apec",
+            "targetPageId": "page-apec-guide",
+            "hideEdge": true,
+            "transitionLabel": "Navigate to APEC Guide"
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-apec-guide",
+      "title": "APEC 2026 Guide",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1751600000000,
+      "canvasData": {
+        "x": 1860,
+        "y": 0,
+        "group": 0
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/apec-guide.html",
+        "interactions": [
+          {
+            "domId": "nav-explore",
+            "targetPageId": "page-explore",
+            "hideEdge": true,
+            "transitionLabel": "Navigate to Explore"
+          },
+          {
+            "domId": "nav-plan",
+            "targetPageId": "page-plan",
+            "hideEdge": true,
+            "transitionLabel": "Navigate to Plan"
+          },
+          {
+            "domId": "nav-home",
+            "targetPageId": "page-home",
+            "hideEdge": true,
+            "transitionLabel": "Navigate to Home"
+          }
+        ]
+      }
+    },
+    {
+      "id": "image-001",
+      "title": "Shenzhen Skyline Hero",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751600000000,
+      "canvasData": {
+        "x": 0,
+        "y": 1291
+      },
+      "devMetadata": {
+        "imageSrc": "assets/hero-shenzhen-skyline.jpg"
+      }
+    },
+    {
+      "id": "image-002",
+      "title": "Shenzhen Districts Overview",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751600000000,
+      "canvasData": {
+        "x": 620,
+        "y": 1291
+      },
+      "devMetadata": {
+        "imageSrc": "assets/explore-districts.jpg"
+      }
+    },
+    {
+      "id": "image-003",
+      "title": "APEC Convention Venue",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751600000000,
+      "canvasData": {
+        "x": 1240,
+        "y": 1291
+      },
+      "devMetadata": {
+        "imageSrc": "assets/apec-venue.jpg"
+      }
+    },
+    {
+      "id": "image-004",
+      "title": "APEC Campaign Launch",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751600000000,
+      "canvasData": {
+        "x": 0,
+        "y": 2200
+      },
+      "devMetadata": {
+        "imageSrc": "assets/shenzhen-apec-campaign-official.jpg"
+      }
+    },
+    {
+      "id": "image-005",
+      "title": "Shenzhen Service Scene",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751600000000,
+      "canvasData": {
+        "x": 620,
+        "y": 2200
+      },
+      "devMetadata": {
+        "imageSrc": "assets/shenzhen-service-scene.jpg"
+      }
+    },
+    {
+      "id": "image-006",
+      "title": "Shenzhen Innovation Hub",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751600000000,
+      "canvasData": {
+        "x": 1240,
+        "y": 2200
+      },
+      "devMetadata": {
+        "imageSrc": "assets/shenzhen-innovation-hub.jpg"
+      }
+    },
+    {
+      "id": "image-007",
+      "title": "APEC Event",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751600000000,
+      "canvasData": {
+        "x": 1860,
+        "y": 1291
+      },
+      "devMetadata": {
+        "imageSrc": "assets/shenzhen-apec-event.jpg"
+      }
+    },
+    {
+      "id": "image-008",
+      "title": "Shenzhen Eco Landscape",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751600000000,
+      "canvasData": {
+        "x": 1860,
+        "y": 2200
+      },
+      "devMetadata": {
+        "imageSrc": "assets/shenzhen-eco-landscape.jpg"
+      }
+    },
+    {
+      "id": "image-009",
+      "title": "Shenzhen Port Maritime",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751600000000,
+      "canvasData": {
+        "x": 0,
+        "y": 3100
+      },
+      "devMetadata": {
+        "imageSrc": "assets/shenzhen-port-maritime.jpg"
+      }
+    },
+    {
+      "id": "image-010",
+      "title": "Shenzhen Airport Payment",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751600000000,
+      "canvasData": {
+        "x": 620,
+        "y": 3100
+      },
+      "devMetadata": {
+        "imageSrc": "assets/shenzhen-airport-payment.jpg"
+      }
+    },
+    {
+      "id": "image-011",
+      "title": "Shekou Expat Center",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751600000000,
+      "canvasData": {
+        "x": 1240,
+        "y": 3100
+      },
+      "devMetadata": {
+        "imageSrc": "assets/shenzhen-shekou-expat-center.jpg"
+      }
+    },
+    {
+      "id": "image-012",
+      "title": "Nanshan Service Center",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1751600000000,
+      "canvasData": {
+        "x": 1860,
+        "y": 3100
+      },
+      "devMetadata": {
+        "imageSrc": "assets/shenzhen-nanshan-service-center.jpg"
+      }
+    }
+  ],
+  "config": {
+    "autoLayout": false,
+    "deviceType": "desktop",
+    "projectName": "APEC 2026 Shenzhen",
+    "designLibrary": null
+  }
+}

@@ -1,0 +1,363 @@
+{
+  "project": {
+    "name": "APEC 2026 Shenzhen",
+    "path": "d:\\Computer Science\\APEX\\apec-shenzhen-2026",
+    "operation": "create",
+    "deviceType": "desktop",
+    "language": "en",
+    "dashboardMode": false,
+    "replicationMode": null,
+    "sourceUrl": null,
+    "visualSpecExcerpt": null,
+    "styleDefinitionBrief": "International summit host city portal — jade green + gold on warm ivory, editorial serif headings, clean card layouts with generous whitespace. Dignified, welcoming, culturally informed.",
+    "designRead": "Government event portal / foreign delegates / dignified cultural warmth / medium density / avoid neon tech and AI buzzword hero",
+    "designDials": {
+      "layoutVariance": 3,
+      "motionIntensity": 2,
+      "visualDensity": 3
+    },
+    "styleContinuityAnchors": {
+      "colorSystem": {
+        "primaryColorRole": "Jade green #1a6b4a used for primary navigation, active states, CTAs, and section accents",
+        "brandHuePolicy": "Gold #b8860b as secondary accent for overlines, decorative elements, and highlights only",
+        "stateColors": "semantic success=green, warning=gold, error=red, info=blue"
+      },
+      "shapeSystem": "restrained: 2px/8px/12px/9999px radius scale",
+      "typographySystem": "Playfair Display + Noto Serif SC for headings; Inter + Noto Sans SC for body. No per-page font experiments.",
+      "spacingSystem": "generous whitespace, 8rem+ section padding, editorial rhythm",
+      "componentLanguage": "border-first cards, minimal shadows (alpha <= 0.05), warm ivory backgrounds",
+      "surfaceAndDepth": "border/surface layering for cards; shadow only for floating layers (alpha <= 0.05)",
+      "imageryAndIconography": "real photography, editorial style, no illustrations",
+      "interactionTone": "refined transitions (250ms), subtle hover lifts, clean focus states"
+    },
+    "sharedProjectShellContract": {
+      "navigationShell": "sticky top nav: logo left, nav links center, language toggle right. Jade green background with white text. Mobile: hamburger.",
+      "primaryColorSystem": "Jade green #1a6b4a as single primary brand hue; gold #b8860b as decorative accent only",
+      "typographySystem": "Playfair Display + Noto Serif SC headings (h1-h2), Inter + Noto Sans SC body (h3+). CJK + Latin dual-script support.",
+      "radiusScale": "2px/8px/12px/9999px — max 12px for cards/buttons",
+      "surfaceDepthModel": "border-first for static cards/sections; shadow only for modals/dropdowns with alpha <= 0.05",
+      "ctaStyle": "jade green solid buttons, white text, 8px radius, hover darkens to --color-primary-dark",
+      "alignmentRules": "left-aligned content, centered hero text, max-width 1280px container with auto margins"
+    },
+    "generationTree": {
+      "root": {
+        "nodeId": "gen-project-shell",
+        "kind": "project-shell",
+        "pageIds": ["page-home", "page-explore", "page-plan", "page-apec-guide"],
+        "output": "partials/project-shell.html",
+        "sharedRegions": ["header", "footer"],
+        "privateRegions": [],
+        "mutableSlots": ["activeNavItem", "pageTitle"],
+        "status": "planned",
+        "children": [
+          {
+            "nodeId": "gen-page-home",
+            "kind": "page-leaf",
+            "pageIds": ["page-home"],
+            "output": "pages/home.html",
+            "sharedRegions": [],
+            "privateRegions": ["page home body"],
+            "mutableSlots": ["activeNavItem"],
+            "status": "planned",
+            "children": []
+          },
+          {
+            "nodeId": "gen-page-explore",
+            "kind": "page-leaf",
+            "pageIds": ["page-explore"],
+            "output": "pages/explore.html",
+            "sharedRegions": [],
+            "privateRegions": ["page explore body"],
+            "mutableSlots": ["activeNavItem"],
+            "status": "planned",
+            "children": []
+          },
+          {
+            "nodeId": "gen-page-plan",
+            "kind": "page-leaf",
+            "pageIds": ["page-plan"],
+            "output": "pages/plan.html",
+            "sharedRegions": [],
+            "privateRegions": ["page plan body"],
+            "mutableSlots": ["activeNavItem"],
+            "status": "planned",
+            "children": []
+          },
+          {
+            "nodeId": "gen-page-apec-guide",
+            "kind": "page-leaf",
+            "pageIds": ["page-apec-guide"],
+            "output": "pages/apec-guide.html",
+            "sharedRegions": [],
+            "privateRegions": ["page apec-guide body"],
+            "mutableSlots": ["activeNavItem"],
+            "status": "planned",
+            "children": []
+          }
+        ]
+      }
+    }
+  },
+  "designSource": {
+    "operatingMode": "free-explore",
+    "libraryIdentity": null,
+    "cssFilePath": "d:\\Computer Science\\APEX\\apec-shenzhen-2026\\colors_and_type.css",
+    "brandPrefix": "apec",
+    "themeMode": "light",
+    "designDecisionSummary": "Custom jade green + gold palette on warm ivory. Playfair Display serif headings with Noto Serif SC fallback. Generous editorial spacing, border-first cards, minimal shadows.",
+    "forbiddenInventedComponents": [],
+    "allowedComponents": [],
+    "styleConstraints": {
+      "radiusMax": 12,
+      "spacingBase": 1,
+      "fontSizeBody": 16,
+      "fontSizeMin": 12,
+      "controlHeightDefault": 40,
+      "controlHeightLarge": 48
+    },
+    "productContext": {
+      "kitType": "custom-event-portal",
+      "productType": "International summit visitor information website"
+    }
+  },
+  "pages": [
+    {
+      "nodeId": "page-home",
+      "slug": "home",
+      "title": "Home",
+      "htmlSrc": "pages/home.html",
+      "pageIndex": 1,
+      "stateGroupId": null,
+      "stateRole": null,
+      "baseStatePageId": null,
+      "sharedShellContract": [],
+      "mutableRegions": [],
+      "derivedFromHtmlSrc": null,
+      "derivationType": "original",
+      "sourcePageId": null,
+      "sourceHtmlSrc": null,
+      "pageType": "showcase",
+      "businessScenario": "Welcoming landing page for APEC 2026 delegates — sets the tone, introduces Shenzhen, and provides key navigation",
+      "visualNorthStar": "An editorial, dignified first impression — full-bleed hero with Shenzhen skyline, gold overline 'APEC 2026', serif headline 'Welcome to Shenzhen', with a warm ivory content section below featuring quick-info cards",
+      "compositionPattern": "Full-bleed hero with asymmetric text overlay → editorial intro section → quick-info card grid → key highlights",
+      "continuityAnchors": ["jade green nav", "serif headings", "gold overlines", "warm ivory backgrounds"],
+      "libraryRestraintMode": false,
+      "uiKitPath": null,
+      "componentPlan": [],
+      "imagePlan": ["hero-shenzhen-skyline.jpg"],
+      "chartsRequired": false,
+      "miniProgramStyle": false,
+      "qualityRisks": []
+    },
+    {
+      "nodeId": "page-explore",
+      "slug": "explore",
+      "title": "Explore Shenzhen",
+      "htmlSrc": "pages/explore.html",
+      "pageIndex": 2,
+      "stateGroupId": null,
+      "stateRole": null,
+      "baseStatePageId": null,
+      "sharedShellContract": [],
+      "mutableRegions": [],
+      "derivedFromHtmlSrc": null,
+      "derivationType": "original",
+      "sourcePageId": null,
+      "sourceHtmlSrc": null,
+      "pageType": "showcase",
+      "businessScenario": "Comprehensive city guide — attractions, districts, culture, food, nature",
+      "visualNorthStar": "Editorial city guide with rich content cards — organized by districts with vivid descriptions, cultural insights, and practical visitor information",
+      "compositionPattern": "Section-based editorial layout — district profiles with offset image-text pairs, cultural highlights in card grid, nature/beaches section with horizontal cards",
+      "continuityAnchors": ["jade green nav", "serif h2 headings", "gold overlines", "warm ivory backgrounds"],
+      "libraryRestraintMode": false,
+      "uiKitPath": null,
+      "componentPlan": [],
+      "imagePlan": ["explore-districts.jpg"],
+      "chartsRequired": false,
+      "miniProgramStyle": false,
+      "qualityRisks": ["content-heavy page — maintain readability with generous spacing"]
+    },
+    {
+      "nodeId": "page-plan",
+      "slug": "plan",
+      "title": "Plan Your Visit",
+      "htmlSrc": "pages/plan.html",
+      "pageIndex": 3,
+      "stateGroupId": null,
+      "stateRole": null,
+      "baseStatePageId": null,
+      "sharedShellContract": [],
+      "mutableRegions": [],
+      "derivedFromHtmlSrc": null,
+      "derivationType": "original",
+      "sourcePageId": null,
+      "sourceHtmlSrc": null,
+      "pageType": "information-dense",
+      "businessScenario": "Practical travel planning — transportation, visa, hotels, weather, tipping, emergency numbers, mobile payments",
+      "visualNorthStar": "Clean, organized reference page with icon-accented info blocks — scannable, practical, not overwhelming. Accordion-style sections for transport, visa, hotels, etc.",
+      "compositionPattern": "Structured reference layout — icon-led info blocks in grid, tabbed or accordion sections for detailed info, clear visual hierarchy",
+      "continuityAnchors": ["jade green nav", "serif h2 headings", "gold overlines", "warm ivory backgrounds"],
+      "libraryRestraintMode": false,
+      "uiKitPath": null,
+      "componentPlan": [],
+      "imagePlan": [],
+      "chartsRequired": false,
+      "miniProgramStyle": false,
+      "qualityRisks": ["information-dense — use cards and spacing to avoid wall-of-text"]
+    },
+    {
+      "nodeId": "page-apec-guide",
+      "slug": "apec-guide",
+      "title": "APEC 2026 Guide",
+      "htmlSrc": "pages/apec-guide.html",
+      "pageIndex": 4,
+      "stateGroupId": null,
+      "stateRole": null,
+      "baseStatePageId": null,
+      "sharedShellContract": [],
+      "mutableRegions": [],
+      "derivedFromHtmlSrc": null,
+      "derivationType": "original",
+      "sourcePageId": null,
+      "sourceHtmlSrc": null,
+      "pageType": "information-dense",
+      "businessScenario": "APEC-specific information — meeting overview, venue details, key dates, protocol tips, nearby points of interest",
+      "visualNorthStar": "Authoritative but approachable — APEC branding with jade green accents, structured timeline of events, venue information, and protocol guidance",
+      "compositionPattern": "Editorial with structured blocks — event timeline, venue info cards, protocol dos/don'ts, FAQ accordion",
+      "continuityAnchors": ["jade green nav", "serif h2 headings", "gold overlines", "warm ivory backgrounds"],
+      "libraryRestraintMode": false,
+      "uiKitPath": null,
+      "componentPlan": [],
+      "imagePlan": ["apec-venue.jpg"],
+      "chartsRequired": false,
+      "miniProgramStyle": false,
+      "qualityRisks": []
+    }
+  ],
+  "assets": [
+    {
+      "filename": "hero-shenzhen-skyline.jpg",
+      "role": "critical-hero",
+      "owningPage": "home",
+      "semanticDescription": "Shenzhen modern skyline at dusk with Ping An Finance Centre, viewed across Victoria Harbour",
+      "status": "planned"
+    },
+    {
+      "filename": "explore-districts.jpg",
+      "role": "supporting-content",
+      "owningPage": "explore",
+      "semanticDescription": "Aerial view of Shenzhen cityscape showing Futian CBD and green spaces",
+      "status": "planned"
+    },
+    {
+      "filename": "apec-venue.jpg",
+      "role": "supporting-content",
+      "owningPage": "apec-guide",
+      "semanticDescription": "Modern convention center in Shenzhen suitable for APEC summit meetings",
+      "status": "planned"
+    }
+  ],
+  "wiringPlan": [
+    {
+      "sourceNodeId": "page-home",
+      "domId": "cta-explore",
+      "targetPageId": "page-explore"
+    },
+    {
+      "sourceNodeId": "page-explore",
+      "domId": "cta-plan",
+      "targetPageId": "page-plan"
+    },
+    {
+      "sourceNodeId": "page-plan",
+      "domId": "cta-apec",
+      "targetPageId": "page-apec-guide"
+    }
+  ],
+  "hiddenInteractionPlan": [
+    {
+      "sourceNodeId": "page-home",
+      "domId": "nav-explore",
+      "targetPageId": "page-explore",
+      "hideEdge": true,
+      "reason": "global nav"
+    },
+    {
+      "sourceNodeId": "page-home",
+      "domId": "nav-plan",
+      "targetPageId": "page-plan",
+      "hideEdge": true,
+      "reason": "global nav"
+    },
+    {
+      "sourceNodeId": "page-home",
+      "domId": "nav-apec",
+      "targetPageId": "page-apec-guide",
+      "hideEdge": true,
+      "reason": "global nav"
+    },
+    {
+      "sourceNodeId": "page-explore",
+      "domId": "nav-home",
+      "targetPageId": "page-home",
+      "hideEdge": true,
+      "reason": "global nav"
+    },
+    {
+      "sourceNodeId": "page-explore",
+      "domId": "nav-plan",
+      "targetPageId": "page-plan",
+      "hideEdge": true,
+      "reason": "global nav"
+    },
+    {
+      "sourceNodeId": "page-explore",
+      "domId": "nav-apec",
+      "targetPageId": "page-apec-guide",
+      "hideEdge": true,
+      "reason": "global nav"
+    },
+    {
+      "sourceNodeId": "page-plan",
+      "domId": "nav-home",
+      "targetPageId": "page-home",
+      "hideEdge": true,
+      "reason": "global nav"
+    },
+    {
+      "sourceNodeId": "page-plan",
+      "domId": "nav-explore",
+      "targetPageId": "page-explore",
+      "hideEdge": true,
+      "reason": "global nav"
+    },
+    {
+      "sourceNodeId": "page-plan",
+      "domId": "nav-apec",
+      "targetPageId": "page-apec-guide",
+      "hideEdge": true,
+      "reason": "global nav"
+    },
+    {
+      "sourceNodeId": "page-apec-guide",
+      "domId": "nav-home",
+      "targetPageId": "page-home",
+      "hideEdge": true,
+      "reason": "global nav"
+    },
+    {
+      "sourceNodeId": "page-apec-guide",
+      "domId": "nav-explore",
+      "targetPageId": "page-explore",
+      "hideEdge": true,
+      "reason": "global nav"
+    },
+    {
+      "sourceNodeId": "page-apec-guide",
+      "domId": "nav-plan",
+      "targetPageId": "page-plan",
+      "hideEdge": true,
+      "reason": "global nav"
+    }
+  ]
+}

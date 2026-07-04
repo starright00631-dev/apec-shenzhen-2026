@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Shenzhen — APEC 2026</title>
+    <style id="theme-vars">
+/* APEC 2026 Shenzhen — Brand Design System */
+/* Custom palette: warm jade green + gold + refined neutrals */
+
+:root {
+  /* ── Primary: Jade Green ── */
+  --color-primary: #1a6b4a;
+  --color-primary-light: #2d8a63;
+  --color-primary-lighter: #4aad83;
+  --color-primary-lightest: #e6f5ee;
+  --color-primary-dark: #14573a;
+  --color-primary-darker: #0e3f29;
+
+  /* ── Gold Accent ── */
+  --color-gold: #b8860b;
+  --color-gold-light: #d4a843;
+  --color-gold-lighter: #f0e6cc;
+  --color-gold-dark: #8b6508;
+
+  /* ── Neutrals ── */
+  --color-bg: #fafaf8;
+  --color-bg-warm: #f5f3ee;
+  --color-bg-cool: #f0f4f2;
+  --color-surface: #ffffff;
+  --color-surface-elevated: #ffffff;
+  --color-border: #e2ddd5;
+  --color-border-light: #ece8e1;
+  --color-border-dark: #c9c3b8;
+  --color-text-primary: #1a1a18;
+  --color-text-secondary: #5a5a50;
+  --color-text-tertiary: #8a8a7e;
+  --color-text-inverse: #ffffff;
+
+  /* ── State Colors ── */
+  --state-success: #2d8a63;
+  --state-warning: #d4a843;
+  --state-error: #c44536;
+  --state-info: #2b7a9e;
+
+  /* ── Radius ── */
+  --radius-sm: 2px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* ── Typography ── */
+  --font-sans: "Inter", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+  --font-serif: "Noto Serif SC", "Source Han Serif SC", "Songti SC", Georgia, serif;
+  --font-display: "Playfair Display", "Noto Serif SC", Georgia, serif;
+
+  /* ── Type Scale ── */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+
+  /* ── Line Heights ── */
+  --leading-tight: 1.25;
+  --leading-snug: 1.35;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.75;
+
+  /* ── Letter Spacing ── */
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.04em;
+  --tracking-wider: 0.08em;
+  --tracking-widest: 0.15em;
+
+  /* ── Spacing ── */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* ── Shadows ── */
+  --shadow-card: 0 1px 3px rgba(26, 26, 24, 0.04);
+  --shadow-elevated: 0 4px 12px rgba(26, 26, 24, 0.05);
+  --shadow-float: 0 12px 32px rgba(26, 26, 24, 0.08);
+
+  /* ── Transitions ── */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 400ms ease;
+}
+
+/* ── Typography Classes ── */
+.apec-h1 {
+  font-family: var(--font-display);
+  font-size: var(--text-5xl);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-text-primary);
+  font-weight: 700;
+}
+
+.apec-h2 {
+  font-family: var(--font-serif);
+  font-size: var(--text-3xl);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+.apec-h3 {
+  font-family: var(--font-sans);
+  font-size: var(--text-xl);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-normal);
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+.apec-body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  letter-spacing: var(--tracking-normal);
+  color: var(--color-text-secondary);
+}
+
+.apec-body-lg {
+  font-family: var(--font-sans);
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  letter-spacing: var(--tracking-normal);
+  color: var(--color-text-secondary);
+}
+
+.apec-overline {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  line-height: var(--leading-normal);
+  letter-spacing: var(--tracking-widest);
+  color: var(--color-gold);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.1/dist/index.global.js"></script>
+    <style type="text/tailwindcss">
+@theme inline {
+    --color-background: var(--color-bg);
+    --color-foreground: var(--color-text-primary);
+    --color-primary: var(--color-primary);
+    --color-primary-foreground: var(--color-text-inverse);
+    --color-muted: var(--color-bg-warm);
+    --color-muted-foreground: var(--color-text-tertiary);
+    --color-card: var(--color-surface);
+    --color-card-foreground: var(--color-text-primary);
+    --color-border: var(--color-border);
+    --color-input: var(--color-border);
+    --color-ring: var(--color-gold);
+    --color-destructive: var(--state-error);
+    --color-destructive-foreground: var(--color-text-inverse);
+    --radius-sm: var(--radius-sm);
+    --radius-md: var(--radius-md);
+    --radius-lg: var(--radius-lg);
+}
+    </style>
+    <script src="https://unpkg.com/lucide@1.8.0/dist/umd/lucide.min.js"></script>
+    <style type="text/tailwindcss">
+  
+  @layer base {
+    body { background: var(--color-bg); color: var(--color-text-primary); }
+    td, th { @apply break-words; word-break: break-all; word-break: auto-phrase; }
+    th { @apply whitespace-nowrap; }
+  }
+    </style>
+    <style>
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      [data-icon] {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
+        background-color: currentColor;
+      }
+
+      /* ── District editorial: drop cap ── */
+      .drop-cap::first-letter {
+        float: left;
+        font-family: var(--font-display);
+        font-size: 4.5rem;
+        line-height: 0.75;
+        padding-right: 0.15em;
+        padding-top: 0.1em;
+        color: var(--color-primary);
+        font-weight: 700;
+      }
+
+      /* ── District image break with caption ── */
+      .district-image-break {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+      }
+      .district-image-break img {
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+        display: block;
+      }
+      .district-image-break .caption-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 2.5rem 2rem 1.5rem;
+        background: linear-gradient(to top, rgba(14, 63, 41, 0.85) 0%, rgba(14, 63, 41, 0.4) 60%, transparent 100%);
+        color: var(--color-text-inverse);
+      }
+      .district-image-break .caption-overlay p {
+        font-family: var(--font-serif);
+        font-style: italic;
+        font-size: var(--text-sm);
+        line-height: var(--leading-relaxed);
+        color: rgba(255, 255, 255, 0.85);
+        max-width: 42rem;
+      }
+
+      /* ── District sub-heading accent ── */
+      .district-sub-heading {
+        position: relative;
+        padding-left: 1.25rem;
+      }
+      .district-sub-heading::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.15em;
+        bottom: 0.15em;
+        width: 3px;
+        border-radius: 2px;
+        background: var(--color-gold);
+      }
+
+      /* ── Food pull quote ── */
+      .food-pull-quote {
+        position: relative;
+        padding: 2rem 2.5rem;
+        border-radius: var(--radius-lg);
+        background: var(--color-gold-lighter);
+        border: 1px solid var(--color-gold-light);
+      }
+      .food-pull-quote::before {
+        content: '\201C';
+        position: absolute;
+        top: 0.25rem;
+        left: 1rem;
+        font-family: var(--font-display);
+        font-size: 4rem;
+        color: var(--color-gold-light);
+        line-height: 1;
+      }
+      .food-pull-quote p {
+        font-family: var(--font-serif);
+        font-style: italic;
+        font-size: var(--text-xl);
+        line-height: var(--leading-relaxed);
+        color: var(--color-text-primary);
+        position: relative;
+        z-index: 1;
+      }
+
+      /* ── Nature scenic placeholders ── */
+      .nature-item {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: stretch;
+        margin-bottom: 3rem;
+      }
+      .nature-item:last-child {
+        margin-bottom: 0;
+      }
+      .nature-item .nature-scenic {
+        flex: 0 0 160px;
+        min-height: 140px;
+        border-radius: var(--radius-md);
+        position: relative;
+        overflow: hidden;
+      }
+      .nature-scenic--coast {
+        background: linear-gradient(135deg, var(--color-bg-cool) 0%, #dceee6 40%, var(--color-primary-lightest) 100%);
+      }
+      .nature-scenic--mountain {
+        background: linear-gradient(135deg, var(--color-primary-lightest) 0%, var(--color-bg-cool) 40%, var(--color-primary-lighter) 100%);
+      }
+      .nature-scenic--mangrove {
+        background: linear-gradient(135deg, var(--color-bg-cool) 0%, #d0e6da 50%, var(--color-primary-lightest) 100%);
+      }
+      .nature-scenic::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 40%;
+        background: linear-gradient(to top, rgba(26, 107, 74, 0.06), transparent);
+      }
+      .nature-scenic--mountain::before {
+        content: '';
+        position: absolute;
+        bottom: 20%;
+        left: 15%;
+        width: 0;
+        height: 0;
+        border-left: 35px solid transparent;
+        border-right: 35px solid transparent;
+        border-bottom: 50px solid rgba(26, 107, 74, 0.1);
+      }
+      .nature-scenic--coast::before {
+        content: '';
+        position: absolute;
+        bottom: 10%;
+        left: 0;
+        right: 0;
+        height: 30%;
+        background: rgba(26, 107, 74, 0.06);
+        border-radius: 50% 50% 0 0;
+      }
+      .nature-scenic--mangrove::before {
+        content: '';
+        position: absolute;
+        bottom: 15%;
+        left: 20%;
+        width: 6px;
+        height: 30%;
+        background: rgba(26, 107, 74, 0.08);
+        border-radius: 50% 50% 0 0;
+        box-shadow: 20px -5px 0 rgba(26, 107, 74, 0.06), 40px 2px 0 rgba(26, 107, 74, 0.07);
+      }
+      .nature-item .nature-text {
+        flex: 1;
+        min-width: 0;
+      }
+      .nature-item .nature-text h3 {
+        font-family: var(--font-serif);
+        font-size: var(--text-xl);
+        font-weight: 600;
+        color: var(--color-text-primary);
+        line-height: var(--leading-snug);
+        margin-bottom: 0.75rem;
+      }
+      .nature-item .nature-text p {
+        font-family: var(--font-sans);
+        font-size: var(--text-sm);
+        color: var(--color-text-secondary);
+        line-height: 1.75;
+      }
+      .nature-meta {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.375rem;
+        margin-top: 0.75rem;
+        padding: 0.25rem 0.75rem;
+        border-radius: var(--radius-full);
+        background: var(--color-primary-lightest);
+        font-family: var(--font-sans);
+        font-size: var(--text-xs);
+        font-weight: 600;
+        color: var(--color-primary);
+        letter-spacing: 0.04em;
+      }
+      @media (min-width: 768px) {
+        .nature-item {
+          flex-direction: row;
+        }
+        .nature-item:nth-child(even) {
+          flex-direction: row-reverse;
+        }
+        .nature-item .nature-scenic {
+          flex: 0 0 200px;
+          min-height: 170px;
+        }
+      }
+
+      /* ── CTA gold rule ── */
+      .cta-editorial-rule {
+        width: 60px;
+        height: 2px;
+        background: var(--color-gold);
+        margin: 0 auto;
+      }
+
+      /* ── Gold separator ── */
+      .editorial-separator {
+        width: 40px;
+        height: 2px;
+        background: var(--color-gold-light);
+        margin: 2.5rem auto;
+      }
+    </style>
+</head>
+<body class="min-h-screen font-sans antialiased">
+    <main>
+
+        <!-- Unified Navigation -->
+        <nav class="sticky top-0 z-50 w-full" style="background: var(--color-primary);">
+          <div class="mx-auto flex items-center justify-between px-6 lg:px-10" style="max-width: 1280px; height: 60px;">
+            <a href="home.html" class="flex items-center gap-2 whitespace-nowrap" style="color: var(--color-text-inverse); font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; letter-spacing: var(--tracking-tight);">APEC 2026</a>
+            <ul class="hidden md:flex items-center gap-8">
+              <li><a href="home.html" class="whitespace-nowrap transition-opacity duration-150 hover:opacity-80" style="color: var(--color-text-inverse); font-size: 0.8125rem; font-weight: 400;" data-dom-id="nav-home">Home</a></li>
+              <li><a href="explore.html" class="whitespace-nowrap transition-opacity duration-150" style="color: var(--color-text-inverse); font-size: 0.8125rem; font-weight: 500; text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 2px;" data-dom-id="nav-explore" aria-current="page">Explore Shenzhen</a></li>
+              <li><a href="plan.html" class="whitespace-nowrap transition-opacity duration-150 hover:opacity-80" style="color: var(--color-text-inverse); font-size: 0.8125rem; font-weight: 400;" data-dom-id="nav-plan">Plan Your Visit</a></li>
+              <li><a href="apec-guide.html" class="whitespace-nowrap transition-opacity duration-150 hover:opacity-80" style="color: var(--color-text-inverse); font-size: 0.8125rem; font-weight: 400;" data-dom-id="nav-apec">APEC Guide</a></li>
+            </ul>
+            <button class="md:hidden flex items-center justify-center" style="color: var(--color-text-inverse);" aria-label="Open navigation menu" id="mobile-menu-btn">
+              <i data-lucide="menu" style="width: 22px; height: 22px;"></i>
+            </button>
+          </div>
+          <div id="mobile-menu" class="md:hidden hidden" style="background: var(--color-primary-dark);">
+            <ul class="flex flex-col px-6 py-4 gap-3">
+              <li><a href="home.html" class="block whitespace-nowrap" style="color: var(--color-text-inverse); font-size: 0.9375rem; font-weight: 400; opacity: 0.85;" data-dom-id="nav-home">Home</a></li>
+              <li><a href="explore.html" class="block whitespace-nowrap" style="color: var(--color-text-inverse); font-size: 0.9375rem; font-weight: 600; text-decoration: underline; text-underline-offset: 4px;" data-dom-id="nav-explore">Explore Shenzhen</a></li>
+              <li><a href="plan.html" class="block whitespace-nowrap" style="color: var(--color-text-inverse); font-size: 0.9375rem; font-weight: 400; opacity: 0.85;" data-dom-id="nav-plan">Plan Your Visit</a></li>
+              <li><a href="apec-guide.html" class="block whitespace-nowrap" style="color: var(--color-text-inverse); font-size: 0.9375rem; font-weight: 400; opacity: 0.85;" data-dom-id="nav-apec">APEC Guide</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- ═══════════════════════════════════════════════════════════ -->
+        <!--  PAGE HEADER                                                -->
+        <!-- ═══════════════════════════════════════════════════════════ -->
+        <section class="py-20 md:py-28" style="background: var(--color-bg);">
+            <div class="mx-auto px-6 lg:px-10" style="max-width: 720px;">
+                <span class="apec-overline">Discover</span>
+                <h1 class="apec-h1 mt-5" style="text-wrap: balance; word-break: keep-all; overflow-wrap: break-word;">Shenzhen Isn't What You Think</h1>
+                <p class="apec-body-lg mt-6" style="line-height: 1.85;">The clich&eacute; is familiar by now: Shenzhen, the &ldquo;Silicon Valley of China.&rdquo; The reality is far more interesting. This is a city of contradictions &mdash; a place where you can buy any electronic component ever manufactured in a single sprawling market, then hike through subtropical forest to a pristine beach forty-five minutes away. Where a 600-year-old Hakka fortress stands in the shadow of a $50 billion tech company&rsquo;s headquarters. Where the city&rsquo;s oldest neighborhood started it all in 1980 with a handful of fishing villages, and today 17 million people live in a metropolis that didn&rsquo;t exist in most atlases when their parents were born.</p>
+                <p class="apec-body-lg mt-5" style="line-height: 1.85;">Shenzhen confounds expectations at every turn. The following guide is written for APEC delegates &mdash; not tourists, not investors, but visitors who have a few days to understand what makes this city unlike anywhere else on Earth.</p>
+                <p class="apec-body-lg mt-5" style="line-height: 1.85;">As an APEC delegate, you&rsquo;ll arrive at a moment when the city is preparing to welcome the world. Roads are being resurfaced, hotel staff are rehearsing multilingual protocols, and the convention center is being fitted with the kind of security infrastructure that only a heads-of-state summit demands. But beyond the summit perimeter, the real Shenzhen &mdash; the one that exists before and after the diplomats leave &mdash; is what this guide is about.</p>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════ -->
+        <!--  THE APEC DELEGATE'S SHENZHEN — EDITORIAL NARRATIVE       -->
+        <!-- ═══════════════════════════════════════════════════════════ -->
+
+        <!-- Section heading -->
+        <section class="pb-6 pt-2" style="background: var(--color-bg);">
+            <div class="mx-auto px-6 lg:px-10" style="max-width: 1280px;">
+                <span class="apec-overline">District Guide</span>
+                <h2 class="apec-h2 mt-3">The APEC Delegate&rsquo;s Shenzhen</h2>
+            </div>
+        </section>
+
+        <!-- Futian — full-width narrative -->
+        <section class="pt-8 pb-12" style="background: var(--color-bg);">
+            <div class="mx-auto px-6 lg:px-10" style="max-width: 760px;">
+                <h3 class="district-sub-heading apec-h3 mb-5">Futian &mdash; Where You&rsquo;ll Spend Most of Your Time</h3>
+                <p class="apec-body drop-cap">The convention center sits in the heart of Futian, surrounded by luxury hotels and the kind of manicured corporate landscaping that makes every district in Asia feel interchangeable. But step outside the conference perimeter and the city begins to reveal itself. The Civic Center is a short walk away &mdash; a massive glass-and-steel building shaped like a giant eye that overlooks a public square with choreographed music fountain shows running every evening. The Shenzhen Library next door is an architectural statement in its own right: a building shaped like open books, deliberately designed to signal that this city values knowledge as much as commerce.</p>
+                <p class="apec-body mt-5" style="line-height: 1.75;">Walk ten minutes south from the Civic Center and you hit MixC, the city&rsquo;s premier shopping mall, built around an indoor canal where families feed koi fish between visits to Louis Vuitton and Tesla. The Shenzhen Museum, also in the Civic Center complex, tells the remarkable story of the city&rsquo;s 45-year transformation from fishing villages to global metropolis. Admission is free. Closed Mondays. Budget an hour; you&rsquo;ll stay two.</p>
+                <p class="apec-body mt-5" style="line-height: 1.75;">This is also where APEC&rsquo;s main events will unfold. The Shenzhen Convention and Exhibition Center, a few blocks east, will host the Economic Leaders&rsquo; Meeting and CEO Summit &mdash; but Futian&rsquo;s restaurants, parks, and cultural venues are what delegates will remember long after the declarations are signed. For the full APEC program and venue details, see the <a href="apec-guide.html" data-dom-id="nav-apec" style="color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px;">APEC Guide</a>.</p>
+            </div>
+        </section>
+
+        <!-- Full-width image break -->
+        <div class="district-image-break">
+            <img src="../assets/explore-districts.jpg" alt="Shenzhen skyline at dusk, glass towers reflected in Shenzhen Bay with mangrove foreground" loading="lazy">
+            <div class="caption-overlay">
+                <p>Shenzhen at dusk: a city that grew from 30,000 people in 1980 to 17 million today, with the mangrove forests that predate it all still standing at the water's edge.</p>
+            </div>
+        </div>
+
+        <!-- Nanshan — full-width narrative -->
+        <section class="pt-12 pb-12" style="background: var(--color-bg);">
+            <div class="mx-auto px-6 lg:px-10" style="max-width: 760px;">
+                <h3 class="district-sub-heading apec-h3 mb-5">Nanshan &mdash; Where the Ideas Happen</h3>
+                <p class="apec-body drop-cap">This is Shenzhen&rsquo;s brain. Tencent&rsquo;s Seafront Towers rise above Shenzhen Bay like twin sailboats frozen mid-race. DJI&rsquo;s global headquarters, a campus of interconnected sky-bridges and glass cubes, sits a few kilometers west. Huawei&rsquo;s Shenzhen campus, with its European-village-inspired architecture, sprawls across the northern reaches of the district. Together, these three companies alone generate more patent applications annually than most countries.</p>
+                <p class="apec-body mt-5" style="line-height: 1.75;">But Nanshan also has a soul, and its name is Shekou. This waterfront district is where Shenzhen&rsquo;s modernization began in earnest &mdash; the site of China&rsquo;s first duty-free shop, its first McDonald&rsquo;s, its first joint-venture factory. Today Shekou is Shenzhen&rsquo;s most international neighborhood, the kind of place where you can grab a flat white at a Australian-owned cafe, browse contemporary art at the Sea World Culture and Arts Center (designed by Pritzker Prize-winner Fumihiko Maki), and end the evening at a craft brewery run by a British expat who came for a six-month contract and stayed eight years. The Maki building alone is worth a 30-minute detour: its interlocking mountain-like forms house rotating exhibitions and the kind of panoramic bay views that remind you this city has a coastline as well as a skyline.</p>
+                <!-- Shekou expat center photo -->
+                <div class="mt-6" style="max-width: 480px;">
+                    <img src="../assets/shenzhen-shekou-expat-center.jpg" alt="Shekou expat service center in Shenzhen's international district" loading="lazy" style="width: 100%; height: auto; border-radius: var(--radius-lg); border: 1px solid var(--color-border-light);">
+                    <p style="margin-top: var(--space-3); font-size: var(--text-xs); color: var(--color-gold); font-style: italic; letter-spacing: var(--tracking-wide);">Shekou expat service centre &mdash; the heart of Shenzhen&rsquo;s international community.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Luohu — full-width narrative -->
+        <section class="pt-2 pb-20" style="background: var(--color-bg);">
+            <div class="mx-auto px-6 lg:px-10" style="max-width: 760px;">
+                <h3 class="district-sub-heading apec-h3 mb-5">Luohu &mdash; The Crossing Point</h3>
+                <p class="apec-body drop-cap">This is where Shenzhen meets Hong Kong, and the friction between the two is palpable in the best possible way. The Luohu Port border crossing handles a quarter of a million people daily &mdash; executives, tourists, traders, grandparents visiting grandchildren. Before you reach the border, though, explore Dongmen Pedestrian Street, a sensory overload of street food stalls, bubble tea shops competing for attention with LED signs, clothing stores stacked four to a building, and the kind of chaotic, joyful commerce that makes Chinese markets irresistible. The Shuibei Gold Market nearby is the largest gold and jewelry trading hub in China, where you can watch artisans work on custom pieces while haggling over 24-karat chains.</p>
+                <p class="apec-body mt-5" style="line-height: 1.75;">Luohu is older than the rest of Shenzhen, and it shows &mdash; not as decay, but as texture. The street food here is the real deal: skewers of lamb dusted with cumin, octopus tentacles grilled over charcoal, egg waffles (gai daan jai) crisp on the outside and chewy within. Come hungry. Come before 10 p.m., when the best stalls start to close.</p>
+                <!-- Luohu port photo -->
+                <div class="mt-6" style="max-width: 480px;">
+                    <img src="../assets/shenzhen-port-maritime.jpg" alt="Shenzhen port and maritime crossing point at Luohu border with Hong Kong" loading="lazy" style="width: 100%; height: auto; border-radius: var(--radius-lg); border: 1px solid var(--color-border-light);">
+                    <p style="margin-top: var(--space-3); font-size: var(--text-xs); color: var(--color-gold); font-style: italic; letter-spacing: var(--tracking-wide);">The Luohu border crossing &mdash; where Shenzhen meets Hong Kong.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════ -->
+        <!--  A CITY THAT EATS SERIOUSLY — NARRATIVE FOOD SECTION        -->
+        <!-- ═══════════════════════════════════════════════════════════ -->
+        <section class="py-20 md:py-24" style="background: var(--color-surface);">
+            <div class="mx-auto px-6 lg:px-10" style="max-width: 720px;">
+
+                <span class="apec-overline">Food &amp; Culture</span>
+                <h2 class="apec-h2 mt-3">A City That Eats Seriously</h2>
+
+                <p class="apec-body-lg mt-6" style="line-height: 1.85;">Guangdong is China&rsquo;s culinary heartland, and Shenzhen sits squarely in its pantry. Cantonese food is built on a principle that sounds simple but takes generations to master: freshness. Ingredients are sourced daily, often hours before they reach your table. The cooking technique that defines the cuisine is <em>wok hei</em> &mdash; literally &ldquo;breath of the wok&rdquo; &mdash; the smoky, caramelized flavor that only appears when a seasoned chef works a carbon-steel wok over a roaring gas flame at temperatures above 1,200 degrees Celsius. It&rsquo;s the magic that turns a handful of spring onions, ginger, and soy sauce into something extraordinary.</p>
+
+                <p class="apec-body-lg mt-6" style="line-height: 1.85;">The dim sum tradition is not merely food; it is a social institution. In Guangdong, business deals are struck over dim sum. Families gather every Sunday for <em>yum cha</em> &mdash; literally &ldquo;drinking tea&rdquo; &mdash; a ritual that can last three hours and involve twenty or thirty small plates. The experience is tactile and unhurried: bamboo baskets of translucent <em>har gow</em> (shrimp dumplings) arriving clouds of steam, <em>char siu bao</em> with their golden tops splitting open to reveal sweet barbecue pork inside, <em>cheong fun</em> (rice noodle rolls) glistening with sweet soy sauce on a porcelain plate. There is no rush. The tea flows, the conversation wanders, and the food keeps coming.</p>
+
+                <div class="food-pull-quote my-10">
+                    <p>In Cantonese culture, the table is where trust is built. The dim sum restaurant is the boardroom, the family room, and the town square, all at once.</p>
+                </div>
+
+                <p class="apec-body-lg mt-8" style="line-height: 1.85;">For APEC delegates based in Futian, the good news is that the CBD has several outstanding Cantonese restaurants inside the luxury hotels &mdash; the Four Seasons, Ritz-Carlton, and Shangri-La all house kitchens that would hold their own in Hong Kong. For a more authentic experience, take a fifteen-minute taxi to Luohu&rsquo;s Dongmen, where the street food is the real deal and a bowl of wonton noodles costs less than the hotel&rsquo;s tea service. Seek out Yue Loong for roast goose &mdash; the crisp, lacquered skin and deeply flavored meat represent a Guangdong tradition that predates Shenzhen itself. Order the claypot rice if it&rsquo;s available: it arrives sizzling, with a caramelized crust of rice at the bottom of the pot that the locals fight over. And don&rsquo;t overlook the seafood. Shenzhen&rsquo;s coastal waters supply Dapeng Bay, and much of the city&rsquo;s seafood arrives at the restaurant that morning, still moving.</p>
+
+                <p class="apec-body mt-6" style="font-style: italic;">For visa details, payment setup, and hotel recommendations, see the <a href="plan.html" data-dom-id="nav-plan" style="color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px;">Plan Your Visit</a> page &mdash; especially the section on mobile payments, which you&rsquo;ll need before attempting that Dongmen street-food run.</p>
+
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════ -->
+        <!--  THE UNEXPECTED GREEN SIDE — NATURE AS REVELATION           -->
+        <!-- ═══════════════════════════════════════════════════════════ -->
+        <section class="py-20 md:py-24" style="background: var(--color-bg);">
+            <div class="mx-auto px-6 lg:px-10" style="max-width: 1280px;">
+
+                <div class="mx-auto mb-4 text-center" style="max-width: 720px;">
+                    <span class="apec-overline">Nature &amp; Outdoors</span>
+                    <h2 class="apec-h2 mt-3">The Unexpected Green Side</h2>
+                </div>
+                <div class="mx-auto mb-12 text-center" style="max-width: 720px;">
+                    <p class="apec-body-lg" style="line-height: 1.85;">Foreign visitors are always surprised by how green Shenzhen is. The city has more parks per capita than any major Chinese city &mdash; over 1,200 parks and 2,400 kilometers of greenways threading through the urban fabric. This is not a city that happens to have some parks; it is a city that has decided, at a policy level, to be a forest with skyscrapers in it.</p>
+                </div>
+
+                <!-- Nature items: alternating layout with jade gradient placeholders -->
+                <div class="mx-auto" style="max-width: 800px;">
+
+                    <!-- Shenzhen Bay Park -->
+                    <div class="nature-item">
+                        <div class="nature-scenic" style="flex: 0 0 160px; min-height: 140px; border-radius: var(--radius-md); overflow: hidden;">
+                            <img src="../assets/shenzhen-eco-landscape.jpg" alt="Shenzhen Bay Park coastal greenway with migratory birds" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        </div>
+                        <div class="nature-text">
+                            <h3>Shenzhen Bay Park</h3>
+                            <p>A 13-kilometer coastal greenway where you can watch black-faced spoonbills &mdash; an endangered species with fewer than 5,000 remaining in the wild &mdash; feeding in the mudflats while joggers pass by and the Shenzhen Bay Bridge stretches toward Hong Kong on the horizon. On winter mornings, the birdwatching here is genuinely world-class.</p>
+                            <span class="nature-meta">13 km coastal greenway</span>
+                        </div>
+                    </div>
+
+                    <!-- Wutong Mountain -->
+                    <div class="nature-item">
+                        <div class="nature-scenic" style="flex: 0 0 160px; min-height: 140px; border-radius: var(--radius-md); overflow: hidden;">
+                            <img src="../assets/shenzhen-eco-landscape.jpg" alt="Wutong Mountain subtropical forest hiking trail" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        </div>
+                        <div class="nature-text">
+                            <h3>Wutong Mountain</h3>
+                            <p>At 943 meters, Wutong is the city&rsquo;s highest point and a genuinely challenging four-hour hike through subtropical forest. The reward at the top is a panorama that stretches to Hong Kong on clear days, with the entire Pearl River Delta spread below like a circuit board. Most delegates won&rsquo;t attempt the summit, but even the lower trails offer a green escape that feels continents away from the convention center.</p>
+                            <span class="nature-meta">943 m elevation &middot; 4-hour hike</span>
+                        </div>
+                    </div>
+
+                    <!-- Mangrove Nature Reserve -->
+                    <div class="nature-item">
+                        <div class="nature-scenic" style="flex: 0 0 160px; min-height: 140px; border-radius: var(--radius-md); overflow: hidden;">
+                            <img src="../assets/shenzhen-eco-landscape.jpg" alt="Futian Mangrove Nature Reserve boardwalk trail" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        </div>
+                        <div class="nature-text">
+                            <h3>Mangrove Nature Reserve</h3>
+                            <p>One of the smallest nature reserves in China, but critically important: this is the last piece of coastal mangrove forest in Shenzhen, and a crucial stop on the East Asian-Australasian flyway for migratory birds. Boardwalk trails wind through the canopy, and an observation station overlooks mudflats where, in season, you can see dozens of species in a single morning. It is also, remarkably, within walking distance of the Futian CBD.</p>
+                            <span class="nature-meta">East Asian-Australasian flyway</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════ -->
+        <!--  CTA — PREPARE FOR YOUR TRIP                               -->
+        <!-- ═══════════════════════════════════════════════════════════ -->
+        <section class="py-16 md:py-20" style="background: var(--color-primary);">
+            <div class="mx-auto px-6 lg:px-10 text-center" style="max-width: 1280px;">
+                <div class="cta-editorial-rule"></div>
+                <p class="mt-8" style="font-family: var(--font-serif); font-style: italic; font-size: var(--text-xl); color: var(--color-gold-lighter); letter-spacing: var(--tracking-tight);">Continue your journey</p>
+                <h2 class="text-white mt-2" style="font-family: var(--font-serif); font-size: var(--text-3xl); font-weight: 600; line-height: 1.25; letter-spacing: -0.02em; text-wrap: balance; word-break: keep-all; overflow-wrap: break-word;">Prepare for Your Trip</h2>
+                <p class="mt-4 text-white/80 text-lg" style="font-family: var(--font-sans); line-height: 1.75; max-width: 32rem; margin-left: auto; margin-right: auto;">Transportation, hotels, weather, visa details, and practical tips for your Shenzhen visit.</p>
+                <a data-dom-id="cta-plan" href="plan.html" class="inline-flex items-center justify-center mt-8 px-8 py-3 rounded-md text-white font-semibold text-sm transition-colors duration-200 whitespace-nowrap" style="background: var(--color-gold); hover:background: var(--color-gold-dark); font-family: var(--font-sans); letter-spacing: 0.04em;">Plan Your Visit</a>
+            </div>
+        </section>
+
+        <!-- Footer (verbatim) -->
+        <footer class="w-full px-6 lg:px-10 py-12" style="background: var(--color-primary-darker);">
+          <div class="mx-auto" style="max-width: 1280px;">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-8">
+              <div>
+                <p style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--color-text-inverse); line-height: 1;">APEC 2026</p>
+                <p class="mt-1" style="font-size: 0.8125rem; color: var(--color-gold-light); letter-spacing: var(--tracking-wide);">Shenzhen, People's Republic of China</p>
+              </div>
+              <div class="flex flex-wrap gap-6">
+                <a href="home.html" class="whitespace-nowrap transition-opacity duration-150 hover:opacity-80" style="font-size: 0.8125rem; color: rgba(255,255,255,0.7);" data-dom-id="nav-home">Home</a>
+                <a href="explore.html" class="whitespace-nowrap transition-opacity duration-150 hover:opacity-80" style="font-size: 0.8125rem; color: rgba(255,255,255,0.7);" data-dom-id="nav-explore">Explore Shenzhen</a>
+                <a href="plan.html" class="whitespace-nowrap transition-opacity duration-150 hover:opacity-80" style="font-size: 0.8125rem; color: rgba(255,255,255,0.7);" data-dom-id="nav-plan">Plan Your Visit</a>
+                <a href="apec-guide.html" class="whitespace-nowrap transition-opacity duration-150 hover:opacity-80" style="font-size: 0.8125rem; color: rgba(255,255,255,0.7);" data-dom-id="nav-apec">APEC Guide</a>
+              </div>
+            </div>
+            <div class="mt-8 pt-6" style="border-top: 1px solid rgba(255,255,255,0.1);">
+              <p style="font-size: 0.6875rem; color: rgba(255,255,255,0.4);">Hosted by the Government of the People's Republic of China. All information subject to official announcements.</p>
+            </div>
+          </div>
+        </footer>
+
+    </main>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Mobile menu toggle
+        var menuBtn = document.getElementById('mobile-menu-btn');
+        var mobileMenu = document.getElementById('mobile-menu');
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Scroll-triggered fade-in animations
+        var revealElements = document.querySelectorAll('[data-reveal]');
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        revealElements.forEach(function(el) {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(24px)';
+            el.style.transition = 'opacity 0.6s cubic-bezier(0.3, 0, 0, 1), transform 0.6s cubic-bezier(0.3, 0, 0, 1)';
+            observer.observe(el);
+        });
+
+        // Image lightbox
+        document.querySelectorAll('article img, section img').forEach(function(img) {
+            if (img.closest('nav') || img.closest('footer')) return;
+            img.style.cursor = 'pointer';
+            img.addEventListener('click', function() {
+                var overlay = document.createElement('div');
+                overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:9999;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s ease;';
+                var bigImg = document.createElement('img');
+                bigImg.src = this.src;
+                bigImg.alt = this.alt;
+                bigImg.style.cssText = 'max-width:90vw;max-height:90vh;border-radius:8px;object-fit:contain;';
+                overlay.appendChild(bigImg);
+                overlay.addEventListener('click', function() {
+                    overlay.style.opacity = '0';
+                    setTimeout(function() { overlay.remove(); }, 300);
+                });
+                document.body.appendChild(overlay);
+                requestAnimationFrame(function() { overlay.style.opacity = '1'; });
+            });
+        });
+
+        // Back to top button
+        var btt = document.createElement('button');
+        btt.textContent = '\u2191';
+        btt.setAttribute('aria-label', 'Back to top');
+        btt.style.cssText = 'position:fixed;bottom:24px;right:24px;width:40px;height:40px;border-radius:50%;background:var(--color-primary);color:white;border:none;font-size:18px;cursor:pointer;opacity:0;transition:opacity 0.3s ease;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,0.15);';
+        btt.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+        document.body.appendChild(btt);
+        window.addEventListener('scroll', function() {
+            btt.style.opacity = window.scrollY > 400 ? '1' : '0';
+        });
+
+        // Active nav highlighting
+        document.querySelectorAll('nav a[href]').forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                document.querySelectorAll('nav a').forEach(function(l) {
+                    l.style.textDecoration = 'none';
+                    l.style.fontWeight = '400';
+                });
+                this.style.textDecoration = 'underline';
+                this.style.textDecorationThickness = '2px';
+                this.style.textUnderlineOffset = '4px';
+                this.style.fontWeight = '500';
+            });
+        });
+    });
+
+    // Initialize Lucide icons
+    lucide.createIcons();
+    </script>
+</body>
+</html>

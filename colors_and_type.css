@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title>
+    <style id="theme-vars">
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home — APEC 2026 Shenzhen</title>
+    <style id="theme-vars">
+/* APEC 2026 Shenzhen — Brand Design System */
+/* Custom palette: warm jade green + gold + refined neutrals */
+
+:root {
+  /* ── Primary: Jade Green ── */
+  --color-primary: #1a6b4a;
+  --color-primary-light: #2d8a63;
+  --color-primary-lighter: #4aad83;
+  --color-primary-lightest: #e6f5ee;
+  --color-primary-dark: #14573a;
+  --color-primary-darker: #0e3f29;
+
+  /* ── Gold Accent ── */
+  --color-gold: #b8860b;
+  --color-gold-light: #d4a843;
+  --color-gold-lighter: #f0e6cc;
+  --color-gold-dark: #8b6508;
+
+  /* ── Neutrals ── */
+  --color-bg: #fafaf8;
+  --color-bg-warm: #f5f3ee;
+  --color-bg-cool: #f0f4f2;
+  --color-surface: #ffffff;
+  --color-surface-elevated: #ffffff;
+  --color-border: #e2ddd5;
+  --color-border-light: #ece8e1;
+  --color-border-dark: #c9c3b8;
+  --color-text-primary: #1a1a18;
+  --color-text-secondary: #5a5a50;
+  --color-text-tertiary: #8a8a7e;
+  --color-text-inverse: #ffffff;
+
+  /* ── State Colors ── */
+  --state-success: #2d8a63;
+  --state-warning: #d4a843;
+  --state-error: #c44536;
+  --state-info: #2b7a9e;
+
+  /* ── Radius ── */
+  --radius-sm: 2px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* ── Typography ── */
+  --font-sans: "Inter", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+  --font-serif: "Noto Serif SC", "Source Han Serif SC", "Songti SC", Georgia, serif;
+  --font-display: "Playfair Display", "Noto Serif SC", Georgia, serif;
+
+  /* ── Type Scale ── */
+  --text-xs: 0.75rem;    /* 12px */
+  --text-sm: 0.875rem;  /* 14px */
+  --text-base: 1rem;     /* 16px */
+  --text-lg: 1.125rem;  /* 18px */
+  --text-xl: 1.25rem;   /* 20px */
+  --text-2xl: 1.5rem;   /* 24px */
+  --text-3xl: 1.875rem; /* 30px */
+  --text-4xl: 2.25rem;  /* 36px */
+  --text-5xl: 3rem;     /* 48px */
+  --text-6xl: 3.75rem;  /* 60px */
+
+  /* ── Line Heights ── */
+  --leading-tight: 1.25;
+  --leading-snug: 1.35;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.75;
+
+  /* ── Letter Spacing ── */
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.04em;
+  --tracking-wider: 0.08em;
+  --tracking-widest: 0.15em;
+
+  /* ── Spacing ── */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* ── Shadows (border-first, minimal alpha) ── */
+  --shadow-card: 0 1px 3px rgba(26, 26, 24, 0.04);
+  --shadow-elevated: 0 4px 12px rgba(26, 26, 24, 0.05);
+  --shadow-float: 0 12px 32px rgba(26, 26, 24, 0.08);
+
+  /* ── Transitions ── */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 400ms ease;
+}
+
+/* ── Typography Classes ── */
+.apec-h1 {
+  font-family: var(--font-display);
+  font-size: var(--text-5xl);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-text-primary);
+  font-weight: 700;
+}
+
+.apec-h2 {
+  font-family: var(--font-serif);
+  font-size: var(--text-3xl);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+.apec-h3 {
+  font-family: var(--font-sans);
+  font-size: var(--text-xl);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-normal);
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+.apec-body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  letter-spacing: var(--tracking-normal);
+  color: var(--color-text-secondary);
+}
+
+.apec-body-lg {
+  font-family: var(--font-sans);
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  letter-spacing: var(--tracking-normal);
+  color: var(--color-text-secondary);
+}
+
+.apec-caption {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+  letter-spacing: var(--tracking-wide);
+  color: var(--color-text-tertiary);
+  text-transform: uppercase;
+}
+
+.apec-overline {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  line-height: var(--leading-normal);
+  letter-spacing: var(--tracking-widest);
+  color: var(--color-gold);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.1/dist/index.global.js"></script>
+    <style type="text/tailwindcss">
+@theme inline {
+    --color-background: var(--color-bg);
+    --color-foreground: var(--color-text-primary);
+    --color-primary: var(--color-primary);
+    --color-primary-foreground: var(--color-text-inverse);
+    --color-muted: var(--color-bg-warm);
+    --color-muted-foreground: var(--color-text-tertiary);
+    --color-card: var(--color-surface);
+    --color-card-foreground: var(--color-text-primary);
+    --color-border: var(--color-border);
+    --color-input: var(--color-border);
+    --color-ring: var(--color-gold);
+    --color-destructive: var(--state-error);
+    --color-destructive-foreground: var(--color-text-inverse);
+    --radius-sm: var(--radius-sm);
+    --radius-md: var(--radius-md);
+    --radius-lg: var(--radius-lg);
+}
+    </style>
+    <script src="https://unpkg.com/lucide@1.8.0/dist/umd/lucide.min.js"></script>
+    <style type="text/tailwindcss">
+  
+  @layer base {
+    body { background: var(--apec-background); color: var(--apec-foreground); }
+    td, th { @apply break-words; word-break: break-all; word-break: auto-phrase; }
+    th { @apply whitespace-nowrap; }
+  }
+    </style>
+    <style>
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      [data-icon] {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
+        background-color: currentColor;
+      }
+    </style>
+</head>
+<body class="min-h-screen font-sans antialiased">
+    <main>
+
+      <!-- ═══════════════════════════════════════════════ -->
+      <!-- STICKY NAVIGATION                               -->
+      <!-- ═══════════════════════════════════════════════ -->
+      <nav class="sticky top-0 z-50 w-full" style="background-color: var(--color-primary);">
+        <div class="mx-auto flex items-center justify-between px-6 lg:px-10" style="max-width: 1280px; height: 64px;">
+          <!-- Logo -->
+          <a href="#" class="flex items-center gap-2 whitespace-nowrap" style="color: var(--color-text-inverse);">
+            <span style="font-family: var(--font-display); font-size: var(--text-2xl); font-weight: 700; letter-spacing: var(--tracking-tight);">APEC 2026</span>
+          </a>
+          <!-- Desktop Nav Links -->
+          <ul class="hidden md:flex items-center gap-8">
+            <li><a href="#" class="whitespace-nowrap transition-colors duration-150" style="color: var(--color-text-inverse); font-size: var(--text-sm); font-weight: 500; text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 2px;" data-dom-id="nav-home" data-active="true" aria-current="page">Home</a></li>
+            <li><a href="#" class="whitespace-nowrap transition-colors duration-150 hover:opacity-80" style="color: var(--color-text-inverse); font-size: var(--text-sm); font-weight: 400; text-decoration: none;" data-dom-id="nav-explore">Explore Shenzhen</a></li>
+            <li><a href="#" class="whitespace-nowrap transition-colors duration-150 hover:opacity-80" style="color: var(--color-text-inverse); font-size: var(--text-sm); font-weight: 400; text-decoration: none;" data-dom-id="nav-plan">Plan Your Visit</a></li>
+            <li><a href="#" class="whitespace-nowrap transition-colors duration-150 hover:opacity-80" style="color: var(--color-text-inverse); font-size: var(--text-sm); font-weight: 400; text-decoration: none;" data-dom-id="nav-apec">APEC Guide</a></li>
+          </ul>
+          <!-- Mobile Hamburger -->
+          <button class="md:hidden flex items-center justify-center" style="color: var(--color-text-inverse);" aria-label="Open navigation menu" id="mobile-menu-btn">
+            <i data-lucide="menu" style="width: 24px; height: 24px;"></i>
+          </button>
+        </div>
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="md:hidden hidden" style="background-color: var(--color-primary-dark); border-top: 1px solid rgba(255,255,255,0.1);">
+          <ul class="flex flex-col px-6 py-4 gap-4">
+            <li><a href="#" class="block whitespace-nowrap" style="color: var(--color-text-inverse); font-size: var(--text-base); font-weight: 600; text-decoration: underline; text-underline-offset: 4px;" data-dom-id="nav-home" aria-current="page">Home</a></li>
+            <li><a href="#" class="block whitespace-nowrap" style="color: var(--color-text-inverse); font-size: var(--text-base); font-weight: 400; opacity: 0.85;" data-dom-id="nav-explore">Explore Shenzhen</a></li>
+            <li><a href="#" class="block whitespace-nowrap" style="color: var(--color-text-inverse); font-size: var(--text-base); font-weight: 400; opacity: 0.85;" data-dom-id="nav-plan">Plan Your Visit</a></li>
+            <li><a href="#" class="block whitespace-nowrap" style="color: var(--color-text-inverse); font-size: var(--text-base); font-weight: 400; opacity: 0.85;" data-dom-id="nav-apec">APEC Guide</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- ═══════════════════════════════════════════════ -->
+      <!-- HERO SECTION                                    -->
+      <!-- ═══════════════════════════════════════════════ -->
+      <section class="relative w-full flex items-center justify-center" style="min-height: 85vh; background-image: url('../assets/hero-shenzhen-skyline.jpg'); background-size: cover; background-position: center;">
+        <!-- Dark overlay for readability -->
+        <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(14,63,41,0.55) 0%, rgba(14,63,41,0.35) 50%, rgba(14,63,41,0.7) 100%);"></div>
+        <!-- Chinese window lattice motif — bottom-left corner -->
+        <div class="hero-lattice" aria-hidden="true"></div>
+        <!-- Hero content -->
+        <div class="relative z-10 text-center px-6 py-20 lg:py-32" style="max-width: 800px;">
+          <!-- Editorial date badge -->
+          <div class="inline-flex items-center gap-2 mb-6" style="border: 1px solid var(--color-gold-light); border-radius: var(--radius-full); padding: 6px 18px;">
+            <span style="font-family: var(--font-sans); font-size: var(--text-xs); color: var(--color-gold-light); letter-spacing: var(--tracking-widest); text-transform: uppercase; font-weight: 500;">November 2026 — Shenzhen, China</span>
+          </div>
+          <p class="apec-overline" style="color: var(--color-gold-light); font-size: 0.8125rem;">APEC 2026</p>
+          <h1 class="apec-h1 mt-4" style="color: var(--color-text-inverse); font-size: clamp(2.25rem, 5vw, 3.75rem); text-wrap: balance; word-break: keep-all; overflow-wrap: break-word;">Welcome to Shenzhen</h1>
+          <!-- Thin gold separator -->
+          <div class="mx-auto mt-6" style="width: 60px; height: 1px; background-color: var(--color-gold);"></div>
+          <p class="apec-body-lg mt-6" style="color: rgba(255,255,255,0.9); max-width: 600px; margin-left: auto; margin-right: auto;">Host City of the 33rd APEC Economic Leaders' Meeting</p>
+          <div class="mt-10">
+            <a href="#" data-dom-id="cta-explore" class="inline-flex items-center justify-center gap-2 whitespace-nowrap transition-all duration-250 hover:translate-y-[-1px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2" style="background-color: var(--color-primary); color: var(--color-text-inverse); padding: 14px 32px; border-radius: var(--radius-md); font-size: var(--text-base); font-weight: 600; font-family: var(--font-sans); letter-spacing: var(--tracking-wide); outline-color: var(--color-gold-light);">
+              Explore the City
+              <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════════════ -->
+      <!-- ABOUT APEC 2026 SECTION — Editorial pull-quote layout -->
+      <!-- ═══════════════════════════════════════════════ -->
+      <section class="scroll-reveal w-full px-6 lg:px-10" style="background-color: var(--color-bg); padding-top: var(--space-32); padding-bottom: var(--space-32);">
+        <div class="mx-auto" style="max-width: 960px;">
+          <p class="apec-overline mb-6">About APEC 2026</p>
+          <!-- Large serif pull-quote -->
+          <blockquote class="apec-pull-quote" style="font-family: var(--font-display); font-size: clamp(1.5rem, 2.8vw, 2.25rem); line-height: var(--leading-snug); color: var(--color-text-primary); font-weight: 600; border-left: 2px solid var(--color-gold); padding-left: var(--space-8); margin-bottom: var(--space-12); max-width: 85%; text-wrap: balance; word-break: keep-all; overflow-wrap: break-word;">
+            The premier forum for facilitating economic growth, cooperation, trade, and investment in the Asia-Pacific region.
+          </blockquote>
+          <!-- Body text flowing below -->
+          <p class="apec-body-lg" style="margin-bottom: var(--space-6); max-width: 720px;">
+            Founded in 1989, APEC encompasses 21 member economies that account for approximately 60% of global GDP and nearly half of world trade. In 2026, China will host the APEC Economic Leaders' Meeting for the third time, following the successful summits in Shanghai (2001) and Beijing (2014).
+          </p>
+          <p class="apec-body-lg" style="margin-bottom: var(--space-6); max-width: 720px;">
+            Shenzhen has been selected as the host city — a fitting choice for a metropolis that symbolizes China's reform and opening-up and has transformed from a fishing village into a global innovation hub in just four decades.
+          </p>
+          <p class="apec-body-lg" style="max-width: 720px;">
+            The 33rd APEC Economic Leaders' Meeting will bring together heads of state, ministers, and business leaders from across the Asia-Pacific to address shared challenges and advance inclusive, sustainable economic growth.
+          </p>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════════════ -->
+      <!-- WHY SHENZHEN SECTION                            -->
+      <!-- ═══════════════════════════════════════════════ -->
+      <section class="scroll-reveal w-full px-6 lg:px-10" style="background-color: var(--color-bg-warm); padding-top: var(--space-32); padding-bottom: var(--space-32);">
+        <div class="mx-auto" style="max-width: 1280px;">
+          <h2 class="apec-h2 mb-4" style="text-wrap: balance; word-break: keep-all; overflow-wrap: break-word;">Why Shenzhen</h2>
+          <p class="apec-body-lg mb-16" style="max-width: 680px;">
+            A city of firsts — China's first Special Economic Zone, a UNESCO City of Design, and the birthplace of breakthroughs that shape how the world connects, moves, and builds.
+          </p>
+          <!-- Feature cards — asymmetric grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Card 1: Innovation Capital — spans 2 columns -->
+            <article class="sz-card md:col-span-2 lg:col-span-2 flex flex-col justify-between border relative" style="background-color: var(--color-surface); border-color: var(--color-border); border-radius: var(--radius-lg); padding: var(--space-10) var(--space-10) var(--space-10) var(--space-16); min-height: 280px; transition: transform 300ms cubic-bezier(.2,.8,.2,1), border-bottom-color 300ms ease, box-shadow 300ms ease; border-bottom: 2px solid transparent;">
+              <span class="sz-card-number" aria-hidden="true">01</span>
+              <div>
+                <div class="flex items-center justify-center mb-6" style="width: 44px; height: 44px; border-radius: var(--radius-md); background-color: var(--color-primary-lightest);">
+                  <i data-lucide="cpu" style="width: 22px; height: 22px; color: var(--color-primary);"></i>
+                </div>
+                <h3 class="apec-h3 mb-3">Innovation Capital</h3>
+                <p class="apec-body" style="font-size: var(--text-sm);">Home to world-leading technology companies including Tencent, Huawei, DJI, and BYD. Shenzhen generates over 50,000 patents annually and leads China in PCT international patent applications.</p>
+              </div>
+            </article>
+            <!-- Card 2: Green City -->
+            <article class="sz-card flex flex-col justify-between border relative" style="background-color: var(--color-surface); border-color: var(--color-border); border-radius: var(--radius-lg); padding: var(--space-8) var(--space-8) var(--space-8) var(--space-14); min-height: 260px; transition: transform 300ms cubic-bezier(.2,.8,.2,1), border-bottom-color 300ms ease, box-shadow 300ms ease; border-bottom: 2px solid transparent;">
+              <span class="sz-card-number" aria-hidden="true">02</span>
+              <div>
+                <div class="flex items-center justify-center mb-6" style="width: 44px; height: 44px; border-radius: var(--radius-md); background-color: var(--color-primary-lightest);">
+                  <i data-lucide="trees" style="width: 22px; height: 22px; color: var(--color-primary);"></i>
+                </div>
+                <h3 class="apec-h3 mb-3">Green City</h3>
+                <p class="apec-body" style="font-size: var(--text-sm);">Over 1,200 parks, 2,400 km of greenways, and pristine coastal beaches. Shenzhen was the first megacity in China to achieve full electrification of its bus and taxi fleet.</p>
+              </div>
+            </article>
+            <!-- Card 3: Cultural Crossroads -->
+            <article class="sz-card flex flex-col justify-between border relative" style="background-color: var(--color-surface); border-color: var(--color-border); border-radius: var(--radius-lg); padding: var(--space-8) var(--space-8) var(--space-8) var(--space-14); min-height: 260px; transition: transform 300ms cubic-bezier(.2,.8,.2,1), border-bottom-color 300ms ease, box-shadow 300ms ease; border-bottom: 2px solid transparent;">
+              <span class="sz-card-number" aria-hidden="true">03</span>
+              <div>
+                <div class="flex items-center justify-center mb-6" style="width: 44px; height: 44px; border-radius: var(--radius-md); background-color: var(--color-primary-lightest);">
+                  <i data-lucide="landmark" style="width: 22px; height: 22px; color: var(--color-primary);"></i>
+                </div>
+                <h3 class="apec-h3 mb-3">Cultural Crossroads</h3>
+                <p class="apec-body" style="font-size: var(--text-sm);">Where tradition meets modernity. Explore centuries-old Hakka walled villages, vibrant Cantonese culinary heritage, and a thriving contemporary arts scene with world-class museums and galleries.</p>
+              </div>
+            </article>
+            <!-- Card 4: Greater Bay Area Gateway -->
+            <article class="sz-card lg:col-start-2 flex flex-col justify-between border relative" style="background-color: var(--color-surface); border-color: var(--color-border); border-radius: var(--radius-lg); padding: var(--space-8) var(--space-8) var(--space-8) var(--space-14); min-height: 260px; transition: transform 300ms cubic-bezier(.2,.8,.2,1), border-bottom-color 300ms ease, box-shadow 300ms ease; border-bottom: 2px solid transparent;">
+              <span class="sz-card-number" aria-hidden="true">04</span>
+              <div>
+                <div class="flex items-center justify-center mb-6" style="width: 44px; height: 44px; border-radius: var(--radius-md); background-color: var(--color-primary-lightest);">
+                  <i data-lucide="map-pin" style="width: 22px; height: 22px; color: var(--color-primary);"></i>
+                </div>
+                <h3 class="apec-h3 mb-3">Greater Bay Area</h3>
+                <p class="apec-body" style="font-size: var(--text-sm);">The gateway to the Guangdong-Hong Kong-Macao Greater Bay Area. Connected to Hong Kong in just 30 minutes via high-speed rail, with seamless access to Macau and Guangzhou.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════════════ -->
+      <!-- QUICK FACTS STRIP — Editorial sidebar style -->
+      <!-- ═══════════════════════════════════════════════ -->
+      <section class="scroll-reveal w-full px-6 lg:px-10" style="background-color: var(--color-primary); padding-top: var(--space-20); padding-bottom: var(--space-20);">
+        <div class="mx-auto" style="max-width: 1280px;">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-center gap-6 md:gap-0">
+            <!-- Fact 1 -->
+            <div class="sz-fact flex items-center gap-4 md:gap-6 md:text-center">
+              <div>
+                <p style="font-family: var(--font-display); font-size: var(--text-4xl); font-weight: 700; color: var(--color-text-inverse); font-variant-numeric: tabular-nums; line-height: 1;">17.5M</p>
+                <p class="mt-1" style="font-family: var(--font-sans); font-size: var(--text-xs); color: var(--color-gold-light); text-transform: uppercase; letter-spacing: var(--tracking-widest); font-weight: 500;">Population</p>
+              </div>
+            </div>
+            <!-- Divider -->
+            <div class="hidden md:block" style="width: 1px; height: 48px; background-color: var(--color-gold); opacity: 0.4; margin: 0 var(--space-10);"></div>
+            <!-- Fact 2 -->
+            <div class="sz-fact flex items-center gap-4 md:gap-6 md:text-center">
+              <div>
+                <p style="font-family: var(--font-display); font-size: var(--text-3xl); font-weight: 700; color: var(--color-text-inverse); line-height: 1;">Mandarin, Cantonese</p>
+                <p class="mt-1" style="font-family: var(--font-sans); font-size: var(--text-xs); color: var(--color-gold-light); text-transform: uppercase; letter-spacing: var(--tracking-widest); font-weight: 500;">Languages — English widely spoken in business</p>
+              </div>
+            </div>
+            <!-- Divider -->
+            <div class="hidden md:block" style="width: 1px; height: 48px; background-color: var(--color-gold); opacity: 0.4; margin: 0 var(--space-10);"></div>
+            <!-- Fact 3 -->
+            <div class="sz-fact flex items-center gap-4 md:gap-6 md:text-center">
+              <div>
+                <p style="font-family: var(--font-display); font-size: var(--text-3xl); font-weight: 700; color: var(--color-text-inverse); line-height: 1;">Chinese Yuan</p>
+                <p class="mt-1" style="font-family: var(--font-sans); font-size: var(--text-xs); color: var(--color-gold-light); text-transform: uppercase; letter-spacing: var(--tracking-widest); font-weight: 500;">Currency — RMB / CNY</p>
+              </div>
+            </div>
+            <!-- Divider -->
+            <div class="hidden md:block" style="width: 1px; height: 48px; background-color: var(--color-gold); opacity: 0.4; margin: 0 var(--space-10);"></div>
+            <!-- Fact 4 -->
+            <div class="sz-fact flex items-center gap-4 md:gap-6 md:text-center">
+              <div>
+                <p style="font-family: var(--font-display); font-size: var(--text-3xl); font-weight: 700; color: var(--color-text-inverse); line-height: 1;">Subtropical</p>
+                <p class="mt-1" style="font-family: var(--font-sans); font-size: var(--text-xs); color: var(--color-gold-light); text-transform: uppercase; letter-spacing: var(--tracking-widest); font-weight: 500;">Climate — warm year-round</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════════════ -->
+      <!-- DID YOU KNOW? — Editorial callout                -->
+      <!-- ═══════════════════════════════════════════════ -->
+      <section class="scroll-reveal w-full px-6 lg:px-10" style="background-color: var(--color-bg-warm); padding-top: var(--space-16); padding-bottom: var(--space-16);">
+        <div class="mx-auto" style="max-width: 720px;">
+          <div class="sz-callout" style="border-left: 3px solid var(--color-gold); background-color: var(--color-bg-warm); padding: var(--space-8) var(--space-10);">
+            <p class="apec-overline mb-4" style="font-size: var(--text-xs);">Did You Know?</p>
+            <p style="font-family: var(--font-serif); font-size: var(--text-lg); line-height: var(--leading-relaxed); color: var(--color-text-secondary); font-style: italic;">Shenzhen grew from a fishing village of 30,000 to a megacity of 17.5 million in just 45 years — one of the most dramatic urban transformations in human history.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════════════ -->
+      <!-- KEY DATES SECTION — Vertical jade timeline       -->
+      <!-- ═══════════════════════════════════════════════ -->
+      <section class="scroll-reveal w-full px-6 lg:px-10" style="background-color: var(--color-bg); padding-top: var(--space-32); padding-bottom: var(--space-32);">
+        <div class="mx-auto" style="max-width: 1280px;">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+            <div class="lg:col-span-5">
+              <h2 class="apec-h2" style="text-wrap: balance; word-break: keep-all; overflow-wrap: break-word;">Key Dates</h2>
+              <p class="apec-body-lg mt-4" style="max-width: 480px;">The APEC 2026 host year includes a series of preparatory meetings culminating in the Economic Leaders' Week.</p>
+            </div>
+            <div class="lg:col-span-7">
+              <div class="sz-timeline relative" style="padding-left: var(--space-10);">
+                <!-- Jade vertical line -->
+                <div class="absolute" style="left: 7px; top: 6px; bottom: 6px; width: 2px; background-color: var(--color-primary-lighter); opacity: 0.5;"></div>
+                <!-- Timeline item 1 -->
+                <div class="relative flex gap-6 pb-10">
+                  <div class="absolute" style="left: calc(-1 * var(--space-10) + 1px); top: 6px; width: 14px; height: 14px; border-radius: var(--radius-full); background-color: var(--color-bg); border: 2px solid var(--color-primary-lighter);"></div>
+                  <div class="flex-1 min-w-0">
+                    <h3 class="apec-h3 mb-1">Senior Officials' Meetings</h3>
+                    <p class="apec-body" style="font-size: var(--text-sm);">Ongoing throughout the year — SOM1, SOM2, and SOM3 sessions where senior officials coordinate the APEC agenda and negotiate joint statements.</p>
+                  </div>
+                </div>
+                <!-- Timeline item 2 -->
+                <div class="relative flex gap-6 pb-10">
+                  <div class="absolute" style="left: calc(-1 * var(--space-10) + 1px); top: 6px; width: 14px; height: 14px; border-radius: var(--radius-full); background-color: var(--color-bg); border: 2px solid var(--color-primary-lighter);"></div>
+                  <div class="flex-1 min-w-0">
+                    <h3 class="apec-h3 mb-1">Ministerial Meetings</h3>
+                    <p class="apec-body" style="font-size: var(--text-sm);">Ministers responsible for trade, finance, and other portfolios convene to advance policy recommendations for Economic Leaders.</p>
+                  </div>
+                </div>
+                <!-- Timeline item 3 -->
+                <div class="relative flex gap-6 pb-10">
+                  <div class="absolute" style="left: calc(-1 * var(--space-10) + 1px); top: 6px; width: 14px; height: 14px; border-radius: var(--radius-full); background-color: var(--color-bg); border: 2px solid var(--color-primary-lighter);"></div>
+                  <div class="flex-1 min-w-0">
+                    <h3 class="apec-h3 mb-1">CEO Summit</h3>
+                    <p class="apec-body" style="font-size: var(--text-sm);">The APEC CEO Summit brings together business leaders from the 21 member economies for dialogue with government leaders on key economic issues.</p>
+                  </div>
+                </div>
+                <!-- Timeline item 4 — Emphasized final item -->
+                <div class="relative flex gap-6">
+                  <div class="absolute" style="left: calc(-1 * var(--space-10) + 1px); top: 6px; width: 16px; height: 16px; border-radius: var(--radius-full); background-color: var(--color-primary); border: 2px solid var(--color-primary); box-shadow: 0 0 0 4px var(--color-primary-lightest);"></div>
+                  <div class="flex-1 min-w-0">
+                    <div class="sz-timeline-highlight" style="background-color: var(--color-primary-lightest); border-radius: var(--radius-md); padding: var(--space-6) var(--space-8); border-left: 3px solid var(--color-primary);">
+                      <h3 style="font-family: var(--font-sans); font-size: var(--text-2xl); font-weight: 700; color: var(--color-primary-dark); margin-bottom: var(--space-2);">Economic Leaders' Meeting</h3>
+                      <p class="apec-body" style="font-size: var(--text-sm);">The pinnacle event — heads of the 21 APEC member economies gather for the annual Economic Leaders' Meeting to set the strategic direction for the forum.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════════════ -->
+      <!-- FOOTER — With typographic logo & border motif    -->
+      <!-- ═══════════════════════════════════════════════ -->
+      <footer class="w-full px-6 lg:px-10" style="background-color: var(--color-primary-darker); padding-top: 0; padding-bottom: var(--space-10);">
+        <!-- Chinese-inspired repeating border motif at top -->
+        <div class="footer-border-motif" aria-hidden="true"></div>
+        <div class="mx-auto grid grid-cols-1 md:grid-cols-12 gap-10" style="max-width: 1280px; padding-top: var(--space-16);">
+          <!-- Footer left — Typographic logo -->
+          <div class="md:col-span-5">
+            <div class="sz-footer-logo">
+              <span style="font-family: var(--font-display); font-size: var(--text-3xl); font-weight: 700; color: var(--color-text-inverse); display: block; line-height: 1;">APEC</span>
+              <span style="font-family: var(--font-display); font-size: var(--text-xl); font-weight: 600; color: var(--color-gold-light); display: block; margin-top: 2px; letter-spacing: var(--tracking-wide);">2026</span>
+            </div>
+            <p class="mt-4" style="font-size: var(--text-sm); color: rgba(255,255,255,0.7); line-height: var(--leading-relaxed); max-width: 380px;">Shenzhen, China — Host City of the 33rd APEC Economic Leaders' Meeting</p>
+          </div>
+          <!-- Footer links -->
+          <div class="md:col-span-3 md:col-start-7">
+            <p class="mb-3" style="font-size: var(--text-xs); font-weight: 600; color: var(--color-gold-light); text-transform: uppercase; letter-spacing: var(--tracking-widest);">Navigate</p>
+            <ul class="flex flex-col gap-2">
+              <li><a href="#" class="whitespace-nowrap transition-colors duration-150 hover:opacity-80" style="font-size: var(--text-sm); color: rgba(255,255,255,0.8); text-decoration: none;" data-dom-id="nav-home">Home</a></li>
+              <li><a href="#" class="whitespace-nowrap transition-colors duration-150 hover:opacity-80" style="font-size: var(--text-sm); color: rgba(255,255,255,0.8); text-decoration: none;" data-dom-id="nav-explore">Explore Shenzhen</a></li>
+              <li><a href="#" class="whitespace-nowrap transition-colors duration-150 hover:opacity-80" style="font-size: var(--text-sm); color: rgba(255,255,255,0.8); text-decoration: none;" data-dom-id="nav-plan">Plan Your Visit</a></li>
+              <li><a href="#" class="whitespace-nowrap transition-colors duration-150 hover:opacity-80" style="font-size: var(--text-sm); color: rgba(255,255,255,0.8); text-decoration: none;" data-dom-id="nav-apec">APEC Guide</a></li>
+            </ul>
+          </div>
+          <!-- Footer resources -->
+          <div class="md:col-span-3">
+            <p class="mb-3" style="font-size: var(--text-xs); font-weight: 600; color: var(--color-gold-light); text-transform: uppercase; letter-spacing: var(--tracking-widest);">Resources</p>
+            <ul class="flex flex-col gap-2">
+              <li><a href="https://www.apec.org" target="_blank" rel="noopener noreferrer" class="whitespace-nowrap transition-colors duration-150 hover:opacity-80" style="font-size: var(--text-sm); color: rgba(255,255,255,0.8); text-decoration: none;">Official APEC Website</a></li>
+              <li><a href="#" class="whitespace-nowrap transition-colors duration-150 hover:opacity-80" style="font-size: var(--text-sm); color: rgba(255,255,255,0.8); text-decoration: none;">Media Center</a></li>
+              <li><a href="#" class="whitespace-nowrap transition-colors duration-150 hover:opacity-80" style="font-size: var(--text-sm); color: rgba(255,255,255,0.8); text-decoration: none;">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Copyright -->
+        <div class="mx-auto mt-12 pt-6 border-t" style="max-width: 1280px; border-color: rgba(255,255,255,0.1);">
+          <p class="text-center" style="font-size: var(--text-xs); color: rgba(255,255,255,0.5);">2026 APEC. All rights reserved.</p>
+        </div>
+      </footer>
+
+    </main>
+
+    <!-- Custom styles for interactions (placed in body per rules) -->
+    <style>
+      /* ── Hero: Chinese window lattice motif ── */
+      .hero-lattice {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 240px;
+        height: 240px;
+        opacity: 0.08;
+        background-image:
+          repeating-linear-gradient(0deg, transparent, transparent 23px, rgba(255,255,255,0.6) 23px, rgba(255,255,255,0.6) 24px),
+          repeating-linear-gradient(90deg, transparent, transparent 23px, rgba(255,255,255,0.6) 23px, rgba(255,255,255,0.6) 24px);
+        mask-image: linear-gradient(to top right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 70%);
+        -webkit-mask-image: linear-gradient(to top right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 70%);
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      /* ── Card: gold position numbers ── */
+      .sz-card-number {
+        position: absolute;
+        top: var(--space-6);
+        left: var(--space-6);
+        font-family: var(--font-display);
+        font-size: var(--text-sm);
+        font-weight: 700;
+        color: var(--color-gold);
+        opacity: 0.5;
+        letter-spacing: var(--tracking-wide);
+      }
+
+      /* ── Card: refined hover (gold bottom border + lift) ── */
+      .sz-card:hover {
+        transform: translateY(-3px);
+        border-bottom-color: var(--color-gold);
+        box-shadow: 0 6px 20px rgba(26, 26, 24, 0.06);
+      }
+      article[class*="flex"]:not(.sz-card):hover {
+        transform: translateY(-2px);
+        border-color: var(--color-border-dark);
+      }
+
+      /* ── Footer: typographic logo ── */
+      .sz-footer-logo {
+        display: inline-block;
+        position: relative;
+        padding-bottom: var(--space-2);
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+      }
+
+      /* ── Footer: Chinese-inspired repeating border motif ── */
+      .footer-border-motif {
+        width: 100%;
+        height: 6px;
+        background-image:
+          repeating-linear-gradient(90deg, transparent 0px, transparent 8px, var(--color-gold-dark) 8px, var(--color-gold-dark) 10px, transparent 10px, transparent 18px, var(--color-gold) 18px, var(--color-gold) 20px);
+        opacity: 0.3;
+      }
+
+      /* ── Did You Know? callout ── */
+      .sz-callout {
+        border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      }
+
+      /* ── Nav link hover ── */
+      nav a:hover {
+        opacity: 0.85;
+      }
+      /* Button active state */
+      a[data-dom-id="cta-explore"]:active {
+        transform: translateY(0);
+        background-color: var(--color-primary-dark);
+      }
+      /* Scroll reveal animation */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(24px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .scroll-reveal {
+        opacity: 0;
+        transform: translateY(24px);
+        transition: opacity 400ms cubic-bezier(.3,0,0,1), transform 400ms cubic-bezier(.3,0,0,1);
+      }
+      .scroll-reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      /* Focus-visible for accessibility */
+      a:focus-visible, button:focus-visible {
+        outline: 2px solid var(--color-gold);
+        outline-offset: 2px;
+      }
+      /* Reduced motion */
+      @media (prefers-reduced-motion: reduce) {
+        .scroll-reveal {
+          opacity: 1;
+          transform: none;
+          transition-duration: 0.01ms;
+        }
+        .sz-card, article[class*="flex"] {
+          transition-duration: 0.01ms;
+        }
+      }
+      /* Touch devices: no hover-dependent content */
+      @media (hover: none) {
+        .sz-card:hover, article[class*="flex"]:hover {
+          transform: none;
+          border-bottom-color: transparent;
+          box-shadow: none;
+        }
+      }
+      /* Responsive: hero lattice smaller on mobile */
+      @media (max-width: 768px) {
+        .hero-lattice {
+          width: 140px;
+          height: 140px;
+        }
+        .footer-border-motif {
+          height: 4px;
+          background-image:
+            repeating-linear-gradient(90deg, transparent 0px, transparent 6px, var(--color-gold-dark) 6px, var(--color-gold-dark) 8px, transparent 8px, transparent 14px, var(--color-gold) 14px, var(--color-gold) 16px);
+        }
+      }
+    </style>
+
+    <!-- Scroll reveal script (IntersectionObserver — does not modify DOM structure) -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Scroll reveal
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+            }
+          });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.scroll-reveal').forEach(function(el) {
+          observer.observe(el);
+        });
+
+        // Mobile menu toggle
+        var menuBtn = document.getElementById('mobile-menu-btn');
+        var mobileMenu = document.getElementById('mobile-menu');
+        if (menuBtn && mobileMenu) {
+          menuBtn.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+          });
+        }
+      });
+    </script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
+
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.1/dist/index.global.js"></script>
+    <script src="https://unpkg.com/lucide@1.8.0/dist/umd/lucide.min.js"></script>
+    <style type="text/tailwindcss">
+  @theme inline {
+    --color-primary: var(--color-primary);
+    --color-border: var(--color-border);
+  }
+  @layer base {
+    body { background: var(--color-surface); color: var(--color-text-primary); }
+    td, th { @apply break-words; word-break: break-all; word-break: auto-phrase; }
+    th { @apply whitespace-nowrap; }
+  }
+    </style>
+    <style>
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      [data-icon] {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
+        background-color: currentColor;
+      }
+    </style>
+</head>
+<body class="min-h-screen font-sans antialiased">
+    <main>
+    </main>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
